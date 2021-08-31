@@ -11,7 +11,7 @@ access_token_secret=os.getenv('access_token_secret')
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 
-api = tweepy.API(auth)
+api = tweepy.API(auth) 
 print("Authentication approved")
 while True:
   user = api.get_user('@Ameen91741779')
